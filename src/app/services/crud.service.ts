@@ -32,5 +32,9 @@ export class CrudService {
   public deleteFuncionario(id: number): Observable<any> {
     return this.http.delete(`http://localhost:5085/api/departamento/func${id}`);
   }
+
+  public editFuncionario(funcionario: Funcionario): Observable<any> {   
+    return this.http.put('http://localhost:5085/api/departamento/alterarFuncionario', funcionario);
+  }
 }   
 

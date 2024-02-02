@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CrudComponent } from './crud/crud.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CrudComponent
+    CrudComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

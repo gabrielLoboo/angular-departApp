@@ -8,7 +8,7 @@
     <label for="siglaNovoDepartamento" class="form-label">Sigla do Novo Departamento:</label>
     <input type="text" class="form-control" id="siglaNovoDepartamento" name="siglaNovoDepartamento" [(ngModel)]="novoDepartamento.sigla" />
   </div>
-  <button type="button" class="btn btn-primary mb-4" (click)="postDepartamento()">Criar Novo Departamento</button>
+  <button type="button" class="btn btn-primary m-2" (click)="postDepartamento()">Criar Novo Departamento</button>
 </form>
 
 <h1>Cadastrar um Funcionario</h1>
@@ -29,7 +29,9 @@
     <label for="departamentoIdNovoFuncionario" class="form-label">ID do Departamento do Novo Funcionário:</label>
     <input type="number" class="form-control" id="departamentoIdNovoFuncionario" name="departamentoIdNovoFuncionario" [(ngModel)]="novoFuncionario.departamentoId" />
   </div>
-  <button type="button" class="btn btn-primary mb-5" (click)="postFuncionario()">Criar Novo Funcionário</button>
+  <button type="button" class="btn btn-primary m-2" (click)="postFuncionario()">Criar Novo Funcionário</button>
+  <button type="button" class="btn btn-success m-2  " routerLink="/edit">Editar um Funcionário</button>
+  
 </form>
 
 <div *ngFor="let d of departamentos">

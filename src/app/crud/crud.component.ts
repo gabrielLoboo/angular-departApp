@@ -82,12 +82,13 @@ export class CrudComponent implements OnInit {
       this.crudService.deleteFuncionario(id).subscribe(
         () => {
           console.log("Funcionário excluído com sucesso!");
-          this.getter(); // Atualize a lista de departamentos após a exclusão bem-sucedida
+          this.getter(); 
         },
         (error) => {
-          console.error("Erro ao excluir funcionário:", error);
+          console.error("ERROR :", error);
         }
       );
     }
   }
+  
 }

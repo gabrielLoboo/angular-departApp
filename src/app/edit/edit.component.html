@@ -1,0 +1,31 @@
+<h1>Editar Funcionários</h1>
+
+<form class="mt-3">
+    <div class="mb-3">
+        <label for="idFuncionario" class="form-label">Id do funcionário :</label>
+        <input type="text" class="form-control" id="idFuncionario" name="idFuncionario" [(ngModel)]="funcionario.id" />
+    </div>
+
+    <div class="mb-3">
+        <label for="nomeFuncionario" class="form-label">Nome do funcionário:</label>
+        <input type="text" class="form-control" id="nomeFuncionario" name="nomeFuncionario" [(ngModel)]="funcionario.nome"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="fotoFuncionario" class="form-label">Foto do funcionário:</label>
+        <input type="text" class="form-control" id="fotoFuncionario" name="fotoFuncionario" [(ngModel)]="funcionario.foto"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="rgFuncionario" class="form-label">RG do funcionário:</label>
+        <input type="text" class="form-control" id="rgFuncionario" name="rgFuncionario" [(ngModel)]="funcionario.rg" />
+    </div>
+
+    <div class="mb-3">
+        <label for="idDepartamentoFuncionario" class="form-label">ID do Departamento do funcionário:</label>
+        <input type="text" class="form-control" id="idDepartamentoFuncionario" name="idDepartamentoFuncionario" [(ngModel)]="funcionario.departamentoId"/>
+    </div>
+
+    <button type="button" class="btn btn-secondary m-2" routerLink="/">Home</button>
+    <button type="button" class="btn btn-primary m-2" (click)="editFuncionario()">Editar Funcionario</button>
+</form>
